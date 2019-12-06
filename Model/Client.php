@@ -41,10 +41,12 @@ class Client
      */
     private $active = true;
 
-    public function __construct(string $identifier, string $secret)
+
+    public function __construct(string $identifier, string $secret, string $name = "")
     {
         $this->identifier = $identifier;
         $this->secret = $secret;
+        $this->name = $name;
     }
 
     public function __toString(): string
