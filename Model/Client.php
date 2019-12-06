@@ -17,6 +17,11 @@ class Client
     private $secret;
 
     /**
+     * @var string
+     */
+    private $name;
+
+    /**
      * @var RedirectUri[]
      */
     private $redirectUris = [];
